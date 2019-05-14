@@ -1,0 +1,13 @@
+.header{
+    background-color:black;
+    color: white;
+    padding-left: 20%;
+    text-align: center;
+}
+.btn-cls{
+  text-align: center;
+  display: table;
+  margin: 0 auto;
+  background-color:green;
+
+}

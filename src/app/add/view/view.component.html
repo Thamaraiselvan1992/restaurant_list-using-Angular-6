@@ -1,0 +1,16 @@
+<mat-accordion multi='true' *ngIf='views !=null'>
+  <mat-expansion-panel *ngFor='let show of views'>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+      Restuarant:  {{show.name}}
+      </mat-panel-title>
+      <mat-panel-description>
+      location:{{show.reslocation}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <h4>Details:</h4> {{show.content}}
+
+  </mat-expansion-panel>
+</mat-accordion>
+<h2 class="result mat-body-2" *ngIf='views==null'>No post Yet!</h2>

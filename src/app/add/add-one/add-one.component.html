@@ -1,0 +1,19 @@
+<mat-card>
+  <div class="example-container">
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()" method="POST" enctype="application/x-www-form-urlencoded">
+
+      <mat-form-field class="form-group">
+        <input  matInput placeholder="Restaurant Name" formControlName="name" required minlength="6">
+
+      </mat-form-field>
+      <mat-form-field class="form-group">
+        <input matInput placeholder="Location"  formControlName="reslocation" required minlength="6">
+        
+      </mat-form-field>
+      <mat-form-field class="form-group">
+        <textarea matInput placeholder="Details of Restaurant" formControlName="content" ></textarea>
+      </mat-form-field><br>
+      <button mat-raised-button color="warn" type="submit">Add List</button>
+    </form>
+  </div>
+</mat-card>
